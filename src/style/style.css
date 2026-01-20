@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color-white: #ffffff;
+    --text-color-black: #2A2932;
+    --icon-color:       #ffffff;
+    --ball-color:       #ffffff;
+    --border-color:     #2A2932;
+    --text-btn-color:   #ffffff;
+    --text-btn-hover:   #ffffff;
+    --back-btn-hover:   #393843;
+    --text-color-input: #ffffff;
+    --color-primary:    #2A2932;
+    --color-secondary:  #5F6368;
+    --color-tertiary:   #41404C;
+}
+
+.checkbox{
+    display: none;
+}
+
+.label{
+    cursor: pointer;
+    background-color: var(--color-primary);
+    display: flex;
+    width: 3.7rem;
+    padding: .35rem;
+    border-radius: 2rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.fa-solid{
+    font-size: 1.2rem;
+    color: var(--icon-color);
+}
+
+.label .circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--ball-color);
+    border-radius: 50%;
+    top: .15rem;
+    left: .20rem;
+    transform: translateX(0px);
+    transition: 100ms;
+}
+
+.checkbox:checked + .label .circle{
+    transform: translateX(28.5px);
+    transition: 100ms;
+}
+
+.main{
+    background-color: var(--color-primary);
+}
+
+.card{
+    border-radius: 2rem;
+    background-color: var(--color-secondary);
+}
+
+.text{
+    color: var(--text-color-white);
+}
+
+.buttons{
+    background-color: var(--color-primary);
+    color: var(--text-btn-color);
+    border: 0;
+}
+
+.buttons:hover{
+    background-color: var(--back-btn-hover);
+    color: var(--text-btn-hover);
+    transition: 200ms;
+}
+
+.form-control, .input-group-text{
+    padding:.90rem;
+    background-color: var(--color-tertiary);
+    color: var(--text-color-input);
+    border: 2px solid var(--border-color);
+    width: 100%;
+}
+
+.form-control:focus{
+    background-color: var(--color-tertiary);
+    box-shadow: none;
+    border:2px solid var(--border-color);
+    color: var(--text-color-input);
+}
+
+.result-input{
+    width: 15rem;
+    height: 3rem;
+    background-color: #ffffff;
+    border-radius: 5rem;
+    text-align: center;
+    color: var(--text-color-black);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.symbol-wrapper{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-border{
+    border:2px solid var(--border-color);
+}
+
+.light-theme{
+    --icon-color:      #2A2932;
+    --ball-color:      #2A2932;
+    --text-btn-color:  #2A2932;
+    --text-btn-hover:  #2A2932;
+    --back-btn-hover:  #c1c1c1;
+    --text-color-input:#2A2932;
+    --color-primary:   #ffffff;
+    --color-secondary: #2A2932;
+    --color-tertiary:  #ffffff;
+}
