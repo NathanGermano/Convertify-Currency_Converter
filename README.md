@@ -2,7 +2,7 @@
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-green) ![License](https://img.shields.io/badge/License-MIT-blue) ![React](https://img.shields.io/badge/Framework-React-blue) ![Bootstrap](https://img.shields.io/badge/Style-Bootstrap%205-purple)
 
-Projeto focado em conversão de moedas feito com React, visando melhor performa e estilo atual.
+Projeto focado em conversão de moedas feito com React, visando melhor performace e estilo mais atual.
 
 Usei o Bootstrap para testar a estilização dos elementos, assim tambem desenvolvi Customs Hooks para manter o componente principal limpo.
 
